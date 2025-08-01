@@ -1,9 +1,15 @@
+# backend/requirements.txt
 fastapi
-uvicorn
-requests
-python-dotenv
-google-generativeai
-pydantic
+uvicorn[standard]
 sqlalchemy
 psycopg2-binary
 redis
+python-dotenv
+google-generativeai
+pydantic
+# REMOVE: google-cloud-speech
+# ADD these lines for Whisper:
+openai-whisper
+torch
+torchaudio
+ffmpeg-python
